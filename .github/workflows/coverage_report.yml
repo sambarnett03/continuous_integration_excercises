@@ -35,7 +35,7 @@ jobs:
 
     - name: Run coverage test
       run: |
-        pytest --cov-config=.coveragerc --cov=./ci_course --cov-report=xml
+        pytest --cov-config=.coveragerc --cov=./ci_course --cov-report=xml --cov-branch
 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
